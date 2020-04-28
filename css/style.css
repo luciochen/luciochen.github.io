@@ -1,0 +1,180 @@
+body{
+	background: white;
+	color: rgb(63, 63, 63);
+	font-family: Avenir, "Open Sans", sans-serif;
+	font-size: 1em;
+	line-height: 1.4em;
+	margin: 0;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+
+h1{
+	margin-top: 100px;
+	margin-bottom: 30px;
+}
+
+img{
+	width: 100%;
+}
+
+header{
+	margin-left: 10%;
+	margin-top: 35px;
+	width: 200px;
+	float: left;
+}
+
+/* header img{
+	width: 30%;
+	margin-top: 20px;
+	display: inline-block;
+}
+
+header h1{
+	font-size: 21px;
+	font-weight: bold;
+	display: inline-block;
+} */
+
+
+#main-header a{
+	color: #17B6BA;
+}
+
+#navbar{
+	margin-top: 65px;
+	margin-right: 15%;
+	float: right;	
+}
+
+#navbar ul{
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+}
+#navbar li{
+	padding-right: 30px;
+	display: inline;
+}
+#navbar a{
+	color: black;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.container{
+	width: 70%;
+	margin: auto;
+	overflow: hidden;
+}
+
+
+.main-intro{
+	margin-top: 120px;
+	font-size: 40px;
+	float:left;
+	width: 70%;
+	line-height: 1.4em;
+	font-weight: lighter;
+	color: black;
+}
+
+
+.project{
+	margin-top: 60px;
+	box-sizing: border-box;
+	width: 45%;
+	float: left;
+	/* margin-right: 20px; */
+}
+.project-intro h2{
+	font-size: 21px;
+}
+.project-intro:hover{
+	opacity: 70%;
+}
+.project-intro p{
+	font-size: 16px;
+}
+.project img{
+	width: 100%;
+}
+
+.horizontal-space{
+	float: left;
+	overflow: hidden;
+	height: 1px;
+	width: 0px;
+  }
+
+.bold-text{
+	font-weight: bold;
+}
+
+footer{
+	margin-top: 120px;
+	background: #333;
+	color: white;
+	padding: 60px;
+	padding-top: 20px;
+	padding-bottom: 80px;
+}
+
+footer p{
+	font-size: 14px;
+	color: lightgrey;
+	float:right;
+	margin-right: 30px;
+}
+
+.email-link{
+	color: white;
+	float: left;
+	margin-top: 12px;
+	margin-left: 10%;
+}
+
+.social-media{
+	float: left;
+	margin-right: 50px;
+}
+
+.social-media ul{
+	list-style: none;
+}
+
+.social-media li{
+	display: inline;
+	padding: 10px 20px;
+	margin-right: 10px;
+	background-color: royalblue;
+
+	transition: all 0.8s ease;
+}
+
+.social-media li:hover{
+	 background-color: lightblue;
+
+}
+
+.social-media li:hover a{
+	 color: yellow;
+
+}
+
+.social-media a{
+	color: white;
+	font-size: 20px;
+}
+
+
+
+
+
+
+
