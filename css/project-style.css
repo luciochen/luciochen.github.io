@@ -42,13 +42,13 @@ p{
 	float: left;
 }
 
-/* @media (max-width: 600px){
+@media (max-width: 800px){
 	.boxof2{
 		width: 100%;
 		box-sizing: border-box;
 		float: left;
 	}
-} */
+}
 
 .boxof2 h2{
 	text-align: left;

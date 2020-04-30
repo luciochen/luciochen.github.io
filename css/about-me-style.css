@@ -4,8 +4,12 @@
 }
 
 #intro{
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     width: 70%;
+}
+
+#intro h2{
+    margin-top: 120px;
 }
 
 #email-link{
