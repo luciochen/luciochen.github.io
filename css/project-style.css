@@ -6,6 +6,7 @@
 
 h2{
 	margin-top: 100px;
+	/* display: inline-block; */
 }
 
 h3{
@@ -22,6 +23,10 @@ p{
 	/* width: 70%; */
 }
 
+hr{
+	margin-top: 180px;
+	border-top: 1px solid #17B6BA;
+}
 
 .image-caption{
 	margin-top: 10px;
@@ -37,9 +42,11 @@ p{
 }
 
 .boxof2{
-	width: 50%;
+	width: 40%;
 	box-sizing: border-box;
 	float: left;
+	text-align: left;
+	margin-left: 10%;
 }
 
 @media (max-width: 800px){
@@ -52,35 +59,30 @@ p{
 
 .boxof2 h2{
 	text-align: left;
-	margin-left: 10%;
 }
 
 .boxof2 p{
-	margin-left: 0;
 	margin-bottom: 100px;
+	margin-left: 0;
 }
 
 .boxof2 ul{
 	text-align: left;
-	/* float: left; */
-	padding-left: 10;
 	margin-top: 0;
+	padding-left: 0;
 }
 
 .boxof2 li{
-	list-style: circle;
 	text-align: left;
 	margin-bottom: 20px;
 	margin-left: 5%;
 }
 
+/* peeknest page list */
 .project-list{
 	text-align: left;
 	margin-left: 5%;
 }
-
-
-
 
 .box{
 	display: inline-block;
@@ -90,9 +92,30 @@ p{
 	font-weight: bold;
 }
 
+#top-button {
+	display: none; /* Hidden by default */
+	position: fixed; /* Fixed/sticky position */
+	bottom: 30px; /* Place the button at the bottom of the page */
+	right: 30px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	outline: none; /* Remove outline */
+	background-color: rgb(95, 95, 95); /* Set a background color */
+	color: white; /* Text color */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding: 15px; /* Some padding */
+	border-radius: 8px; /* Rounded corners */
+	font-size: 18px; /* Increase font size */
+	transition: all 0.6s ease;
+  }
+  
+#top-button:hover {
+	background-color: #17B6BA; /* Add a dark-grey background on hover */
+}
+
 .narrow-image{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 70%;
+	width: 80%;
 }

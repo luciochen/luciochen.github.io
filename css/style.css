@@ -18,6 +18,7 @@ h1{
 	display: inline-block;
 }
 
+
 img{
 	width: 100%;
 }
@@ -34,6 +35,9 @@ header img{
 	margin-top: 5px;
 }
 
+.color-text{
+    color: #17B6BA;
+}
 
 #main-header a{
 	color: #17B6BA;
@@ -147,7 +151,7 @@ footer p{
 	display: inline;
 	padding: 10px 20px;
 	margin-right: 10px;
-	background-color: royalblue;
+	background-color: #17B6BA;
 
 	transition: all 0.8s ease;
 }
