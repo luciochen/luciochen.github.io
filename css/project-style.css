@@ -3,8 +3,14 @@
 	text-align: left;
 }
 
+@media (max-width: 800px){
+	h1{
+		line-height: 1.2em;
+	}
+}
 
 h2{
+	font-size: 1.3rem;
 	margin-top: 100px;
 	/* display: inline-block; */
 }
@@ -30,7 +36,6 @@ hr{
 
 .image-caption{
 	margin-top: 10px;
-	font-size: 16px;
 	font-style: italic;
 }
 
@@ -39,6 +44,15 @@ hr{
 	text-align: center;
 	margin: auto;
 	overflow: hidden;
+}
+
+
+@media (max-width: 800px){
+	.project-container{
+		width: 100%;
+		/* box-sizing: border-box;
+		float: left; */
+	}
 }
 
 .boxof2{
@@ -92,10 +106,15 @@ hr{
 	font-weight: bold;
 }
 
+.project-nav-button{	
+	width: 180px;
+	margin-top: 80px;
+}
+
 #top-button {
 	display: none; /* Hidden by default */
 	position: fixed; /* Fixed/sticky position */
-	bottom: 30px; /* Place the button at the bottom of the page */
+	bottom: 60px; /* Place the button at the bottom of the page */
 	right: 30px; /* Place the button 30px from the right */
 	z-index: 99; /* Make sure it does not overlap */
 	border: none; /* Remove borders */
@@ -105,7 +124,7 @@ hr{
 	cursor: pointer; /* Add a mouse pointer on hover */
 	padding: 15px; /* Some padding */
 	border-radius: 8px; /* Rounded corners */
-	font-size: 18px; /* Increase font size */
+	font-size: 1.2rem; /* Increase font size */
 	transition: all 0.6s ease;
   }
   
