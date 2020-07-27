@@ -3,29 +3,25 @@
 	text-align: left;
 }
 
-@media (max-width: 800px){
-	h1{
-		line-height: 1.2em;
-	}
+h1{
+	font-size: 3rem;
 }
 
 h2{
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	margin-top: 100px;
 	/* display: inline-block; */
 }
 
 h3{
 	text-align: center;
-	font-weight: lighter;
-	margin-top: 80px;
-
 }
 
 p{
 	margin-left: 10%;
 	margin-right: 10%;
 	text-align: left;
+	max-width: 50rem;
 	/* width: 70%; */
 }
 
@@ -33,6 +29,66 @@ hr{
 	margin-top: 180px;
 	border-top: 1px solid #17B6BA;
 }
+
+/* end of global styling */
+
+
+.project-banner{
+	position: relative;
+	background-color: #F3EBE4;
+	display: flex;
+	width: 100vw;
+	height: 100%;
+}
+
+.project-banner span{
+	margin-left: 10%;
+	padding-bottom: .5em;
+	padding-top: 2em;
+
+	height: 50%;
+	width: 30%;
+	font-size: 2.4rem;
+	font-weight: bold;
+	line-height: 1.4em;
+	border-bottom: 2px grey solid;
+}
+
+.project-banner img{
+	width: 50%;
+	object-fit: contain;
+	margin-left: auto;
+}
+
+@media(max-width: 800px){
+	.project-banner{
+		margin-top: 3rem;
+		display: block;
+		padding-top: 1rem;
+	}
+
+	.project-banner img{
+		margin-top: 2rem;
+		width: 100%;
+	}
+
+	.project-banner span{
+		padding: 0;
+		display: block;
+		margin: 0 auto;
+		width: 80%;
+		font-size: 2rem;
+		border: none;
+	}
+
+	h1{
+		font-size: 2rem;
+		margin-top: 3rem;
+		margin-bottom: 2rem;
+	}
+
+}
+
 
 .image-caption{
 	margin-top: 10px;
@@ -44,6 +100,7 @@ hr{
 	text-align: center;
 	margin: auto;
 	overflow: hidden;
+	display: block;
 }
 
 
@@ -137,4 +194,29 @@ hr{
 	margin-left: auto;
 	margin-right: auto;
 	width: 80%;
+}
+
+.nav-btn{
+	font-weight: bold;
+	display: block;
+	position: relative;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 5rem;
+}
+
+.next-project{
+	margin-left: auto;
+	position: absolute;
+	right: 0;
+}
+
+.next-project span{
+	color: #17B6BA;
+}
+
+@media(max-width: 700px){
+	.nav-btn{
+		display: none;
+	}
 }

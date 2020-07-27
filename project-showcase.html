@@ -5,29 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/project-style.css">
+	<link rel="stylesheet" type="text/css" href="css/project-style.css">
+	<link rel="stylesheet" type="text/css" href="css/properties.css">
+	<link rel="stylesheet" type="text/css" href="css/flexbox.css">
+	<script src="https://kit.fontawesome.com/1c90995e4d.js" crossorigin="anonymous"></script>
+
     <title>Lucio's Portfolio</title>
 </head>
 
 <body>
 
-    <header id="main-header">
-		<a href="index.html"> <img src="images/web header.png" alt="">
+    <nav>
+		<a href="index.html"> <img src="images/web header.png" alt="logo" class="header-img">
 		</a>
-	</header>
-    
-	<nav id="navbar">
+
 		<ul>
-			<li id="nav-projects"><a href="index.html">Projects</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="resume.html">Resume</a></li>
+			<li id="nav-projects"><a href="index.html">home</a></li>
+			<li><a href="about.html">about</a></li>
+			<li><a href="resume.html">resume</a></li>
 		</ul>
-	</nav>
+    </nav>
+
+    
+    <section class="project-banner">
+        <span>Web design solution to engage store members.</span>
+        <img src="images/showcase.png" alt="tool library showcase">
+
+    </section>
+
+
 
     <div class="project-container">
         
-        <h1>Tool library showcase: UI/UX design</h1>
+        <h1>Tool library showcase</h1>
         <h2>Overview</h2>
         <p>The Tool library showcase is a platform for the Vancouver tool library to educate members tool literacy with its featured handcraft projects. 
             <br><br>
@@ -38,7 +50,6 @@
         <br>
 
         <!-- <h3>Main page mockup</h3> -->
-        <img src="images/showcase.png" alt="">
 
         <div class="boxof2">
             <h2>Role</h2>
@@ -146,36 +157,27 @@
             which could be valuable if we test out our to know if the members will be engaged in handcraft projects more with our product.
         </p>
 
-        <a href="project-peeknest.html"><img src="images/next project button.png" alt="" class="project-nav-button"></a>
-
     </div>
 
 
     <button onclick="topFunction()" id="top-button" title="Go to top">Top</button>
 
+    <div class="nav-btn">
+        <a href="index.html"> < Back to home page </a>
+        <a href="project-peeknest.html" class="next-project">Next Project: <span>Peeknest redesign</span> ></a>
+    </div>
 
 
+   <footer>
+		<h3>Let's get in touch!</h3>
+		<a href="mailto:luciochen79@gmail.com" target="_blank" class="email-link">luciochen79@gmail.com</a>
+		<a href="https://www.linkedin.com/in/lucio-chen-649638178/" target="_blank"> 
+			<i class="fa fa-linkedin fa-lg linkedin-icon"></i>
+		</a>
 
-    <footer id="main-footer">
-		<a href="mailto:luciochen79@gmail.com" class="email-link">luciochen79@gmail.com</a>
+	</footer>
 
-		<script src="https://kit.fontawesome.com/1c90995e4d.js" crossorigin="anonymous"></script>
-		<ul class="social-media">
-
-			<li><a href="https://www.facebook.com/chen.lucio.9" target="_blank">	<i class="fab fa-facebook-square"> </i></a></li>
-			<li><a href="https://www.linkedin.com/in/lucio-chen-649638178/" target="_blank"> <i class="fab fa-linkedin"></i></a></li>
-		</ul>
-        
-        <p>
-			Web design and content &copy 2020, Lucio Chen
-		</p>
-
-    </footer>
-    
-    <script src="js/index.js"> </script>
-    
-
-
+	<script src="js/index.js"></script>
 
 </body>
 </html>

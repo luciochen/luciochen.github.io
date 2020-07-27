@@ -4,80 +4,94 @@
 	<title>Lucio's Portfolio</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-
+	<link rel="stylesheet" type="text/css" href="css/properties.css">
+	<link rel="stylesheet" type="text/css" href="css/flexbox.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<script src="https://kit.fontawesome.com/1c90995e4d.js" crossorigin="anonymous"></script>
 </head>
+
+
 <body>
-	<div id="main-header">
-		<header >
-				<a href="index.html"> <img src="images/web header.png" alt="">
-				</a>
-		</header>
+	<nav>
+		<a href="index.html"> <img src="images/web header.png" alt="logo" class="header-img">
+		</a>
 
-		<nav id="navbar">
-			<ul>
-				<li id="nav-projects"><a href="index.html">Projects</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="resume.html">Resume</a></li>
-			</ul>
-		</nav>
-	</div>
-
+		<ul>
+			<li id="nav-projects"><a href="index.html">home</a></li>
+			<li><a href="about.html">about</a></li>
+			<li><a href="resume.html">resume</a></li>
+		</ul>
+	</nav>
 
 
 	<div class="container">
 
 		<p class="main-intro">
-			Hello, I'm Lucio, a passionate UX/UI designer & web developer.
+			Hello, I'm <strong>Lucio</strong> <span>&#128075;</span>
+			<br><br>
+			A passionate UX/UI designer and web developer.
 		</p>
 
+		<section class="box">
+			<div class="personal-intro box-item">
+				<p>I am a design student who loves creating smooth interaction and beautiful UI for
+					software products. I focus on understanding the problem in the users' perspective
+					and deliver a feasible solution to solve it.
+				</p>
+			</div>
 
-		<section class="project">
-			<a href="project-showcase.html">
-				<img src="images/showcase.png">
-				<div class="project-intro">
-				<h2>Tool library showcase: UI/UX design</h1>
+			<div class="intro-contact box-item">
+				<h3>Contact Me</h3>
+				<a href="mailto:luciochen79@gmail.com" target="_blank" class="email-link">luciochen79@gmail.com</a>
+				<a href="https://www.linkedin.com/in/lucio-chen-649638178/" target="_blank"> 
+					<i class="fa fa-linkedin fa-lg linkedin-icon"></i>
+				</a>
+				
+			</div>
+		</section>	
+
+
+		<section class="project box shadow">
+			<img src="images/showcase.png" alt="Tool library showcase">
+			
+			<div class="project-intro">
+				<span>UX design / User research / Graphic design</span>
+				<h3>Tool library Showcase</h3>
 				<p>A UI/UX design solution for a better members engagement for Vancouver tool library.
 				</p>	
-				</div>
-			</a>	
+
+				<button onclick="location= 'project-showcase.html'" class="btn shadow">VIEW CASE STUDY</button>
+			</div>
 		</section>
 
-		<div class="horizontal-space" style="width:50px"></div>
-
-		<section class="project">
-			<a href="project-peeknest.html">
-				<img src="images/peeknest redesign.png">	
-				<div class="project-intro">
-				<h2>Peeknest: UI redesign</h1>
+		<section class="project box shadow color-peeknest">
+			<img src="images/peeknest redesign.png" alt="Peeknest redesign">
+			
+			<div class="project-intro">
+				<span>UX design / User research</span>
+				<h3>Peeknest UI redesign</h3>
 				<p>Redesign of an existing organizing app Peeknest. Tackle on the problematic interactions.
 				</p>	
-				</div>
-			</a>
+
+				<button onclick="location= 'project-peeknest.html'" class="btn shadow">VIEW PROJECT</button>
 			</div>
 		</section>
 
 	</div>
 
-			
 	</div>
 
 
 
 	<footer>
-		<div id= "contact-info">
-			<a href="mailto:luciochen79@gmail.com" target="_blank" class="email-link">luciochen79@gmail.com</a>
-
-			<script src="https://kit.fontawesome.com/1c90995e4d.js" crossorigin="anonymous"></script>
-			<ul class="social-media">
-
-				<li><a href="https://www.facebook.com/chen.lucio.9" target="_blank">	<i class="fab fa-facebook-square"> </i></a></li>
-				<li><a href="https://www.linkedin.com/in/lucio-chen-649638178/" target="_blank"> <i class="fab fa-linkedin"></i></a></li>
-			</ul>
-		</div>
-
-		<p>Web design and content &copy 2020, Lucio Chen</p>
+		<h3>Let's get in touch!</h3>
+		<a href="mailto:luciochen79@gmail.com" target="_blank" class="email-link">luciochen79@gmail.com</a>
+		<a href="https://www.linkedin.com/in/lucio-chen-649638178/" target="_blank"> 
+			<i class="fa fa-linkedin fa-lg linkedin-icon"></i>
+		</a>
 
 	</footer>
+
 
 </body>
 </html>

@@ -1,0 +1,29 @@
+
+.bold-text{
+	font-weight: bold;
+}
+
+.color-text{
+    color: #17B6BA;
+}
+
+.color-peeknest{
+	background-color: #EAE9E9;
+}
+
+.shadow{
+	-webkit-box-shadow: 
+	0 3.1px 3.8px rgba(0, 0, 0, 0.036),
+	0 10.3px 12.7px rgba(0, 0, 0, 0.054),
+	0 46px 57px rgba(0, 0, 0, 0.09);
+
+	-moz-box-shadow:
+	0 3.1px 3.8px rgba(0, 0, 0, 0.036),
+	0 10.3px 12.7px rgba(0, 0, 0, 0.054),
+	0 46px 57px rgba(0, 0, 0, 0.09);
+
+	box-shadow: 
+	0 3.1px 3.8px rgba(0, 0, 0, 0.036),
+	0 10.3px 12.7px rgba(0, 0, 0, 0.054),
+	0 46px 57px rgba(0, 0, 0, 0.09);
+}
