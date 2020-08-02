@@ -1,28 +1,23 @@
 
-.sign{
-	text-align: left;
-}
 
 h1{
-	font-size: 3rem;
+	font-size: 3.2rem;
+	margin-bottom: 6rem;
 }
 
 h2{
-	font-size: 1.5rem;
-	margin-top: 100px;
-	/* display: inline-block; */
+	font-size: 1.2rem;
+	font-weight: 900;
 }
 
 h3{
 	text-align: center;
+	font-size: 1.2rem;
 }
 
 p{
-	margin-left: 10%;
-	margin-right: 10%;
-	text-align: left;
-	max-width: 50rem;
-	/* width: 70%; */
+	max-width: 40rem;
+	min-width: 14rem;
 }
 
 hr{
@@ -30,9 +25,50 @@ hr{
 	border-top: 1px solid #17B6BA;
 }
 
+.caption{
+	margin-top: 0.5rem;
+	font-size: 1rem;
+	color: rgb(148, 148, 148);
+}
+
+.image-resize{
+	max-width: 30rem;
+}
+
 /* end of global styling */
 
 
+
+
+
+
+.project-container{
+	width: 70%;
+	margin: auto;
+	overflow: hidden;
+	display: block;
+}
+
+.project-container-wide{
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
+	display: block;
+}
+
+@media (max-width: 800px){
+	.project-container{
+		width: 82%;
+		/* box-sizing: border-box;
+		float: left; */
+	}
+
+	.project-container-wide{
+		width: 100%;
+	}	
+}
+
+/* start of project banner */
 .project-banner{
 	position: relative;
 	background-color: #F3EBE4;
@@ -44,7 +80,7 @@ hr{
 .project-banner span{
 	margin-left: 10%;
 	padding-bottom: .5em;
-	padding-top: 2em;
+	padding-top: 5%;
 
 	height: 50%;
 	width: 30%;
@@ -62,7 +98,7 @@ hr{
 
 @media(max-width: 800px){
 	.project-banner{
-		margin-top: 3rem;
+		margin-top: 5rem;
 		display: block;
 		padding-top: 1rem;
 	}
@@ -89,79 +125,70 @@ hr{
 
 }
 
+/* end of project banner */
 
-.image-caption{
-	margin-top: 10px;
-	font-style: italic;
+
+
+
+/* start of 2 column styling */
+.context-section h2{
+	color: #17B6BA;
 }
 
-.project-container{
-	width: 70%;
-	text-align: center;
-	margin: auto;
-	overflow: hidden;
-	display: block;
+.context-section p{
+	font-size: 1rem;
 }
 
+.col-2-left{
+	padding-right: 3em;
+}
+
+.col-2-left img{
+	max-width: 60rem;
+	min-width: 20rem;
+}
+
+.col-2-right img{
+	max-width: 60rem;
+}
+
+/* end of 2 column styling */
+
+
+.highlight-title{
+	margin-top: 5rem;
+	padding-right: 5%;
+	padding-bottom: 0.5em;
+
+	text-align: right;
+	width: 24rem;
+	border-bottom: 2px #17B6BA solid;
+	font-size: 2rem;
+}
 
 @media (max-width: 800px){
-	.project-container{
-		width: 100%;
-		/* box-sizing: border-box;
-		float: left; */
+	.highlight-title{
+		margin: auto;
+		margin-top: 5rem;
+		text-align: center;
+		width: 20rem;
+		border-bottom: 2px #17B6BA solid;
+		font-size: 2rem;
 	}
 }
 
-.boxof2{
-	width: 40%;
-	box-sizing: border-box;
-	float: left;
-	text-align: left;
-	margin-left: 10%;
-}
 
-@media (max-width: 800px){
-	.boxof2{
-		width: 100%;
-		box-sizing: border-box;
-		float: left;
-	}
-}
-
-.boxof2 h2{
-	text-align: left;
-}
-
-.boxof2 p{
-	margin-bottom: 100px;
-	margin-left: 0;
-}
-
-.boxof2 ul{
-	text-align: left;
-	margin-top: 0;
-	padding-left: 0;
-}
-
-.boxof2 li{
-	text-align: left;
-	margin-bottom: 20px;
-	margin-left: 5%;
-}
-
-/* peeknest page list */
-.project-list{
-	text-align: left;
-	margin-left: 5%;
-}
 
 .box{
 	display: inline-block;
 }
 
-.bold-text{
-	font-weight: bold;
+.color-background{
+	background-color: #F3EBE4;
+	padding: 2em 0;
+	margin-top: 2em;
 }
+
 
 .project-nav-button{	
 	width: 180px;
@@ -205,6 +232,11 @@ hr{
 	margin-top: 5rem;
 }
 
+.nav-btn a:hover{
+	color: #17B6BA;
+	transition: 0.2s ease-in;
+}
+
 .next-project{
 	margin-left: auto;
 	position: absolute;
@@ -220,3 +252,4 @@ hr{
 		display: none;
 	}
 }
+

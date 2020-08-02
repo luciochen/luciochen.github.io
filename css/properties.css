@@ -11,6 +11,10 @@
 	background-color: #EAE9E9;
 }
 
+.color-grocery{
+	background-color: #F0DAA2;
+}
+
 .shadow{
 	-webkit-box-shadow: 
 	0 3.1px 3.8px rgba(0, 0, 0, 0.036),
@@ -26,4 +30,12 @@
 	0 3.1px 3.8px rgba(0, 0, 0, 0.036),
 	0 10.3px 12.7px rgba(0, 0, 0, 0.054),
 	0 46px 57px rgba(0, 0, 0, 0.09);
+}
+
+.margin-top{
+	margin-top: 3em;
+}
+
+.no-margin-top{
+	margin-top: 0;
 }

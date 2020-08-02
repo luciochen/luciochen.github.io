@@ -32,6 +32,7 @@ h1{
 
 
 img{
+	width: 100%;
 	height: auto;
 	max-width: 100%;
 }
@@ -40,12 +41,12 @@ img{
 
 nav{
 	margin-top: 1.5rem;
-	margin-right: 10%;
+	/* margin-right: 10%; */
 	display: block;
 }
 
 .header-img{
-	margin-left: 17%;
+	margin-left: 15%;
 	width: 200px;
 	color: #17B6BA;
 }
@@ -61,25 +62,35 @@ nav ul{
 	list-style: none;
 	display: inline-block;
 	position: absolute;
-	right: 15vw;
+	right: 10vw;
 	top: 2rem;
 }
 nav li{
-	padding-right: 2rem;
+	padding-right: 2em;
 	display: inline;
 }
 nav a{
 	color: black;
 	text-decoration: none;
-	font-size: 1.2rem;
+	font-size: 1.12rem;
 	font-weight: bold;
 }
 
-@media(max-width: 800px){
+
+@media(max-width: 700px){
 	nav ul{
-		display: block;
+		display: flex;
+		justify-content: space-around;
+		width: 20rem;
+		/* position: relative; */
+		transform: translate(-50%);
+		left: 50%;
+		top: 7rem;
 		margin: auto;
-		top: 6rem;
+	}
+
+	nav li{
+		padding-right: 0em;
 	}
 
 	.header-img{
@@ -115,6 +126,14 @@ h3{
 	display: block;
 }
 
+@media(max-width: 800px){
+	.container{
+		width: 80%;
+		margin: auto;
+		position: relative;
+		display: block;
+	}
+}
 
 .main-intro{
 	margin-top: 8rem;
@@ -131,20 +150,24 @@ h3{
 	box-sizing: border-box;
 }
 
-.personal-intro img{
+/* .personal-intro img{
 	margin-right: 1em;
 	margin-left: 0;
 	height: auto;
-}
+} */
 
 .personal-intro p{
 	margin-top: 0rem;
-	width: 24rem;
+	width: 80%;
 	display: inline-block;
 	line-height: 1.3em;
 }
 
 @media(max-width: 600px){
+	.personal-intro{	
+		padding-right: 0;
+	}
+
 	.personal-intro p{
 		margin-top: 0rem;
 		margin: 0 auto;
@@ -156,9 +179,9 @@ h3{
 
 
 
-.intro-contact{
+/* .intro-contact{
 	text-align: center;
-}
+} */
 
 /* start of styling for contact methods */
 
@@ -212,15 +235,15 @@ h3{
 
 .project img{
 	width: 60%;
-	min-width: 20rem;
+	/* min-width: 20rem; */
 	object-fit: contain;
 }
 
 .project-intro{
 	width: 35%;
-	padding: 1em;
-	padding-top: 1em;
+	margin-top: 5%;
 	display: inline-block;
+	position: relative;
 }
 
 .project-intro p{
@@ -230,7 +253,7 @@ h3{
 }
 
 .project-intro h3{
-	margin-top: 2em;
+	margin-top: 1em;
 }
 
 .project-intro button{
@@ -239,12 +262,11 @@ h3{
 }
 
 .project-intro span{
-	margin-top: 2em;
 	font-size: 0.9rem;
 	color: grey;
 }
 
-@media(max-width: 800px){
+@media(max-width: 1150px){
 
 	.project{
 		text-align: center;
@@ -253,8 +275,13 @@ h3{
 	.project-intro{
 		width: 90%;
 		padding: 1em;
-		padding-top: 1em;
+		margin-top: 1em;
 		display: inline-block;
+	}
+
+	.project img{
+		width: 100%;
+		object-fit: contain;
 	}
 }
 

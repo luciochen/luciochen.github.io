@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/flexbox.css">
 	<link rel="stylesheet" type="text/css" href="css/project-style.css">
 	<link rel="stylesheet" type="text/css" href="css/properties.css">
 	<link rel="stylesheet" type="text/css" href="css/flexbox.css">
@@ -22,9 +23,9 @@
 		</a>
 
 		<ul>
-			<li id="nav-projects"><a href="index.html">home</a></li>
 			<li><a href="about.html">about</a></li>
 			<li><a href="resume.html">resume</a></li>
+			<li id="nav-projects"><a href="#footer">contact</a></li>
 		</ul>
     </nav>
 
@@ -40,66 +41,68 @@
     <div class="project-container">
         
         <h1>Tool library showcase</h1>
-        <h2>Overview</h2>
-        <p>The Tool library showcase is a platform for the Vancouver tool library to educate members tool literacy with its featured handcraft projects. 
-            <br><br>
-            In this project, we implemented research tools to develop our understanding of the clients. 
-            Finally, we came up with a design solution to enhance the workshop engagement and keep members interested in lending tools.
-        </p>
+
+        <div class="box">
+
+            <div class="col-2-left box-item">
+                <h2>OVERVIEW</h2>
+                <p>The Tool library showcase is a platform for the Vancouver tool library to educate members tool literacy with its featured handcraft projects. 
+                    <br><br>
+                    In this project, we implemented research tools to develop our understanding of the clients. 
+                    Finally, we came up with a design solution to enhance the workshop engagement and keep members interested in lending tools.
+                </p>
+            </div>
             
-        <br>
+            <div class="col-2-right box-item context-section">
+                <h2>Context</h2>
+                <p>Course project: Interaction Design Methods (Spring 2020) <br><br>
+                    Group with Caleb, T., Dawood, S., and Fatima, I.
+                    <br><br>
+                </p>
 
-        <!-- <h3>Main page mockup</h3> -->
+                <h2>Role</h2>
+                <p>UI design, User research, Graphic design</p>
 
-        <div class="boxof2">
-            <h2>Role</h2>
-            <ul>
-                <li>User research</li>
-                <li>UX/UI design</li>
-                <li>Graphic design</li>
-                
-            </ul>
+                <h2>Tools</h2>
+                <p>Illustrator, Photoshop, Figma</p>
+
+            </div>
         </div>
 
-        <div class="boxof2">
-            <h2>Context</h2>
-            <p>Course project: Interaction Design Methods (Spring 2020) <br><br>
-                Group with Caleb, T., Dawood, S., and Fatima, I.
-                <br><br>
-                Tools: Figma, Illustrator, Photoshop
+        <div class="box margin-top">
+            <div class="col-2-left box-item">
+                <img src="images/vtl-store.jpg" alt="">
+                <span class="caption">Vancouver Tool Library, images from: https://www.instagram.com/p/B_lb68CB3dP/</span>
+            </div>
+
+            <div class="col-2-right box-item">
+                <h2 class="no-margin-top">CLIENT</h2>
+                <p>The Vancouver tool library strives to make Vancouver more sustainable by lending out tools. It also holds handcrafting workshops to teach members how to DIY an artifact with these tools.
+                    <br><br>
+                    Our group aimed to find out the pain points in the interaction within this organization, and tried to deliver a better in-store/project experience for the members.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="color-background">
+        <div class="project-container">
+            <h2>RESEARCH</h2>
+            <p>As part of our group's research, I conveyed in-person interviews with 4 volunteers and few members to understand their needs and pain points in this organization.
             </p>
-
+            <p>After the research, our group found a large amount of amateur members are experienced on neither using tools nor doing projects, which raised our concern about members' safety and tool maintenance. 
+                Therefore, we chose to focus on creating a smooth tool renting experience that ensures the safety of new/amateur users.  
+            </p>
         </div>
-        
-
-        <h2>Our client & Objective</h2>
-        <p>The Vancouver tool library strives to make Vancouver more sustainable by lending out tools. It also holds handcrafting workshops to teach members how to DIY an artifact with these tools.
-            <br><br>
-            Our group aimed to find out the pain points in the interaction within this organization, and tried to deliver a better in-store/project experience for the members.
-        </p>
-        <img src="images/vtl store.png" alt="">
-        <caption>Vancouver Tool Library, images from: https://www.instagram.com/p/B_lb68CB3dP/</caption>
-
-
-        <h2>Research</h2>
-        <p>As part of our group's research, I conveyed in-person interviews with 4 volunteers and few members to understand their needs and pain points in this organization.
-        </p>
-        <p>After the research, our group found a large amount of amateur members are experienced on neither using tools nor doing projects, which raised our concern about members' safety and tool maintenance. 
-            Therefore, we chose to focus on creating a smooth tool renting experience that ensures the safety of new/amateur users.  
-        </p>
-
-       
-       
 
         <h3>User journey map highlight</h3>
         <img src="images/user journey.png" alt="">
-
-        <!-- <p>We brainstormed some ideas around our initial focus, but these ideas ended up being either like a marketing solution or not feasible for this organization.
-        </p>
-        <h3>Whiteboard brainstorm section</h3>
-        <img src="images/whiteboard.JPG" alt=""> -->
+    </div>
 
 
+<!-- 
         <h2>Participatory Workshop</h2>
         <p>When designing the participatory workshop, I considered how to make participants engage in the activities well and co-create with us. Therefore, I designed the warm-up questions 
             and activities flow to make participants smoothly transit to the state of co-creating.
@@ -108,55 +111,76 @@
             During the workshop, participants suggested a common need to educate amateur members with more project practice. Also, we learned that the tool safety from the initial focus should be avoided because it will become a liability.
         </p>
         <h3>Graffiti Wall activity from the participatory workshop</h3> <br>
-        <img src="images/participatory workshop.png" alt="" class="narrow-image">
+        <img src="images/participatory workshop.png" alt="" class="narrow-image"> -->
 
-        <h2>Final design focus</h2>
-        <p>After the workshop, we re-directed our design focus as:
-            <span class="color-text">Enhance new and amateur member’s tool literacy through workshop engagement and projects. </span> 
-            <br><br>
-            Based on members' active engagement with the Tool library website, we finally chose the solution of a project showcase on the website.
-            It leads members to check out the workshops that can offer the opportunity to learn to handcraft while getting familiar with the tools. Also, they still have the option to replicate the projects following
-            the DIY instructions.
-        </p>
+    <div class="project-container margin-top">
 
-        <h2>Design process</h2>
+        <div class="box">
+            <div class="col-2-left box-item">
+                <h2 class="no-margin-top">DESIGN FOCUS</h2>
+                <p>After the workshop, we re-directed our design focus as:
+                    <span class="color-text">Enhance new and amateur member’s tool literacy through workshop engagement and projects. </span> 
+                    <br><br>
+                    Based on members' active engagement with the Tool library website, we finally chose the solution of a project showcase on the website.
+                    It leads members to check out the workshops that can offer the opportunity to learn to handcraft while getting familiar with the tools. Also, they still have the option to replicate the projects following
+                    the DIY instructions.
+                </p>
+            </div>
 
+            <div class="col-2-right box-item">
+            <img src="images/whiteboard.JPG" alt="whiteboard section" class=" image-resize">
+            </div>
+        </div>
+    </div>
+
+
+    <h2 class="highlight-title">Design process</h2>
+
+
+    <div class="project-container">
         <h3>Website layout sketch</h3>
         <img src="images/sketch.png" alt="" class="narrow-image">
 
         <h3>Project showcase section: layout iteration</h3>
         <img src="images/section iteration.png" alt="">
+    </div>
 
-        <h2>Interface design rationale</h2>
+    <h2 class="highlight-title">Final design</h2>
+
+    <div class="project-container">
+        <h2>Role: Interface design</h2>
 
         <p> Since the original website lacks the visual identity of the organization, I decided to add images that can better show the story of the Vancouver tool library.
             Besides, I added a section to post member's project to increase the product engagement. Links to check tool inventory and workshop details integrate other
             features that exist on the original website.
         </p>
 
-        <h2>Final design (Role: Interface design)</h2>
         <h3>Project showcases overview</h3>
-        <img src="images/showcase page.png" alt="" class="narrow-image">
+        <img src="images/showcase page.png" alt="project showcase overview" class="narrow-image">
 
         <h3>DIY instruction page</h3>
-        <img src="images/DIY walkthrough.png" alt="" class="narrow-image">
+        <img src="images/DIY walkthrough.png" alt="DIY instruction page" class="narrow-image">
 
         <h3>Digital strategy</h3>
-        <img src="images/showcase platform.png" alt="">
+        <img src="images/showcase platform.png" alt="Digital strategy mockups">
 
+    </div>
 
-        <h2>Conclusion</h2>
-        <p>Working closely with the Vancouver Tool Library, it helps me to understand how to research and design to tackle a real problem. 
-            It allows me to practice many research methods to get a clear understanding of the goals and near problems from both stakeholders and users. 
-            In the process, I always value the data gathered from the research. Finally, we delivered a feasible solution to help with this organization. 
+    <div class="color-background">
+        <div class="container">
+            <h2>Conclusion</h2>
+            <p>Working closely with the Vancouver Tool Library, it allows me to practice many research methods to get a clear understanding of the goals and near problems 
+                from both stakeholders and users. 
+                In the process, I always value the data gathered from the research. Finally, we delivered a feasible solution to help with this organization. 
+            </p>
 
-        <h2>Reflection</h2>
-        <p>The product on the Vancouver tool library's main page is not very explicit, it causes a problem when it is hard to get people exposed to our product. Therefore, It would be better if there is an in-store promotion to get more people to use this project showcase.
-            <br><br>
-            Lastly, the situation of COVID-19 gave us many constraints. If things went offline, I will conduct a participatory workshop with more engaging activities. We missed the opportunity for the product user testing, 
-            which could be valuable if we test out our to know if the members will be engaged in handcraft projects more with our product.
-        </p>
-
+            <h2 class="margin-top">Reflection</h2>
+            <p>The product on the Vancouver tool library's main page is not very explicit, it causes a problem when it is hard to get people exposed to our product. Therefore, It would be better if there is an in-store promotion to get more people to use this project showcase.
+                <br><br>
+                Lastly, the situation of COVID-19 gave us many constraints. We missed the opportunity for the product user testing, 
+                which could be valuable if we test out our to know if the members will be engaged in handcraft projects more with our product.
+            </p>
+        </div>
     </div>
 
 
@@ -168,7 +192,7 @@
     </div>
 
 
-   <footer>
+   <footer id="footer">
 		<h3>Let's get in touch!</h3>
 		<a href="mailto:luciochen79@gmail.com" target="_blank" class="email-link">luciochen79@gmail.com</a>
 		<a href="https://www.linkedin.com/in/lucio-chen-649638178/" target="_blank"> 

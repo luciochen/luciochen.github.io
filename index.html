@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 	<title>Lucio's Portfolio</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -17,9 +20,9 @@
 		</a>
 
 		<ul>
-			<li id="nav-projects"><a href="index.html">home</a></li>
 			<li><a href="about.html">about</a></li>
 			<li><a href="resume.html">resume</a></li>
+			<li id="nav-projects"><a href="#footer">contact</a></li>
 		</ul>
 	</nav>
 
@@ -40,14 +43,6 @@
 				</p>
 			</div>
 
-			<div class="intro-contact box-item">
-				<h3>Contact Me</h3>
-				<a href="mailto:luciochen79@gmail.com" target="_blank" class="email-link">luciochen79@gmail.com</a>
-				<a href="https://www.linkedin.com/in/lucio-chen-649638178/" target="_blank"> 
-					<i class="fa fa-linkedin fa-lg linkedin-icon"></i>
-				</a>
-				
-			</div>
 		</section>	
 
 
@@ -64,8 +59,21 @@
 			</div>
 		</section>
 
+		<section class="project box shadow color-grocery">
+			<img src="images/grocery-vancouver-landing.jpeg" alt="Grocery Vancouver">
+			
+			<div class="project-intro">
+				<span>Web design/ Web development / Graphic design</span>
+				<h3>Grocery Vancouver</h3>
+				<p>Web building for a grocery store. A platform allows people to shop grocery and delivery to their home.
+				</p>	
+
+				<button onclick="location= 'project-showcase.html'" class="btn shadow">VIEW CASE STUDY</button>
+			</div>
+		</section>
+
 		<section class="project box shadow color-peeknest">
-			<img src="images/peeknest redesign.png" alt="Peeknest redesign">
+			<img src="images/peeknest redesign.jpg" alt="Peeknest redesign">
 			
 			<div class="project-intro">
 				<span>UX design / User research</span>
@@ -83,7 +91,7 @@
 
 
 
-	<footer>
+	<footer id="footer">
 		<h3>Let's get in touch!</h3>
 		<a href="mailto:luciochen79@gmail.com" target="_blank" class="email-link">luciochen79@gmail.com</a>
 		<a href="https://www.linkedin.com/in/lucio-chen-649638178/" target="_blank"> 
