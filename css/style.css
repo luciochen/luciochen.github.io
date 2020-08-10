@@ -7,12 +7,16 @@
   */
 
 body{
-	background: white;
+	background: #FFFDFA;
 	color: #313131;
 	font-family: Avenir, "Open Sans", sans-serif;
 	font-size: 1.12rem;
 	line-height: 1.4em;
 	margin: 0;
+
+	--main-color: #16B9BB;
+	--bg-color: #E4F5F5;
+	--text-hover: #50cacc;
 }
 
 p{
@@ -52,7 +56,7 @@ nav{
 }
 
 .header-img:hover{
-	transition: 0.2s ease-in;
+	transition: 0.2s ease-in-out;
 	transform: scale(1.05);
 }
 
@@ -71,6 +75,18 @@ nav li{
 }
 nav a{
 	color: black;
+	text-decoration: none;
+	font-size: 1.12rem;
+	font-weight: bold;
+}
+
+#link-to-contact{
+	transition: 1s ease-in-out;
+}
+
+nav a:hover{
+	color: #16B9BB;
+	transition: 0.2s ease-in-out;
 	text-decoration: none;
 	font-size: 1.12rem;
 	font-weight: bold;
@@ -129,59 +145,110 @@ h3{
 @media(max-width: 800px){
 	.container{
 		width: 80%;
-		margin: auto;
-		position: relative;
-		display: block;
+	}
+}
+
+
+.intro-section{
+	width: 100%;
+	height: 100vh;
+	margin-top: 20vh;
+}
+
+@keyframes intro-animation{
+	from{
+		transform: translate(10%, 20%);
+
+		opacity: 0;
+	}
+	to{
+		transform: translate(0%, 0%);
+		opacity: 1;
+	}
+}
+
+@keyframes fade-in{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
 	}
 }
 
 .main-intro{
-	margin-top: 8rem;
-	font-size: 2rem;
-	width: 70%;
-	line-height: 1.4em;
-	/* font-weight: lighter; */
-	color: black;
 	display: block;
+	margin: auto;
+	width: 70%;
+	background-color: #E4F5F5;	
+	background-image: linear-gradient(to bottom right, #DFF5F5, #DEF7F7);
+	border-radius: 6em 6em 0 6em;
+	min-width: 30ch;
+
+	animation-name: intro-animation;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
 }
 
-.personal-intro{	
-	padding-right: 3em;
-	box-sizing: border-box;
+.main-intro p{
+	padding: 2em 3em;
+	margin: auto;
+	color: var(--main-color);
+	font-size: 2rem;
+	line-height: 1.4em;
 }
 
-/* .personal-intro img{
-	margin-right: 1em;
-	margin-left: 0;
-	height: auto;
-} */
-
-.personal-intro p{
-	margin-top: 0rem;
-	width: 80%;
-	display: inline-block;
-	line-height: 1.3em;
+.intro-name{
+	font-size: 2.4rem;
+	font-weight: bold;
 }
 
-@media(max-width: 600px){
-	.personal-intro{	
-		padding-right: 0;
-	}
+.intro-title{
+	margin: auto;
+	margin-top: 2rem;
 
-	.personal-intro p{
-		margin-top: 0rem;
-		margin: 0 auto;
-		width: 18rem;
-		display: inline-block;
-		line-height: 1.3em;
-	}
-}
-
-
-
-/* .intro-contact{
+	color: var(--main-color);
+	text-decoration: underline;
 	text-align: center;
-} */
+	font-weight: bold;
+	display: block;
+	opacity: 0;
+
+	animation-name: fade-in;
+	animation-duration: 2s;
+	animation-delay: 1s;
+
+	/* code is from: https://stackoverflow.com/questions/9131026/how-to-keep-styles-after-animation */
+	-webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
+	-moz-animation-fill-mode: forwards;    /* FF 5+ */
+	-o-animation-fill-mode: forwards;      /* Not implemented yet */
+	-ms-animation-fill-mode: forwards;     /* IE 10+ */
+	animation-fill-mode: forwards;         /* When the spec is finished */
+}
+
+
+@media (max-width: 60rem){
+	.intro-section{
+		height: 40vh;
+	}
+
+	.main-intro p{
+		font-size: 1.2rem;
+		line-height: 1.4em;
+	}
+
+	.intro-name{
+		font-size: 1.8rem;
+	}
+}
+
+@media (max-width: 40rem){
+	.main-intro{
+		width: 100%;
+	}
+}
+
+
 
 /* start of styling for contact methods */
 
@@ -213,16 +280,16 @@ h3{
 
 
 
-
-
-@media (max-width: 800px){
-	.main-intro{
-		width: 100%;
-		margin-top: 7rem;
-		font-size: 1.8rem;
+@keyframes project-animation{
+	from{
+		transform: translateY(20%);
+		opacity: 0.2;
+	}
+	to{
+		transform: translateY(0%);
+		opacity: 1;
 	}
 }
-
 
 .project{
 	margin-top: 5rem;
@@ -231,6 +298,11 @@ h3{
 	display: block;
 	position: relative;
 	max-width: 90rem;
+	height: 100%;
+	
+	/* animation-name: project-animation;
+	animation-duration: 1.2s;
+	animation-timing-function: ease-in-out; */
 }
 
 .project img{
@@ -259,6 +331,11 @@ h3{
 .project-intro button{
 	margin-top: 1em;
 	cursor: pointer;
+}
+
+.project-intro button:hover{
+	transform: scale(1.05);
+	transition: 0.2s ease-in-out;
 }
 
 .project-intro span{
@@ -303,7 +380,37 @@ footer{
 	display: block;
 }
 
+.footer-link a{
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+.footer-link a:hover{
+	color: #17B6BA;
+	transition: ease-in 0.2s;
+}
 
 
+.reference{
+	margin-top: 3rem;
+}
+
+.styleguide img{
+	width: 70%;
+}
+
+.styleguide h2,img{
+	display: block;
+}
+
+@media (max-width: 50rem){
+	.styleguide img{
+		width: 100%;
+	}
+
+	.styleguide{
+		margin-top: 6rem;
+	}
+}
 
 

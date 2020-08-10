@@ -1,27 +1,82 @@
-.intro-image{
-    margin-top: 30px;
-    margin-bottom: 30px;
+
+h2{
+    /* color: #17B6BA; */
+    font-size: 1.3rem;
 }
 
-#intro{
-    margin-bottom: 60px;
-    width: 80%;
+h3{
+    font-size: 1.12rem;
 }
 
-@media (max-width: 1000px){
-    #intro{
-        width: 90%;
+ul{
+    padding-bottom: 3em;
+    padding-left: 0;
+}
+
+li{
+    list-style: none;
+    max-width: 32ch;
+}
+
+.about-left{
+    width: 40%;
+    object-fit: contain;
+    min-width: 20rem;
+}
+
+.about-left h2{
+    display: inline;
+}
+
+.about-right{
+    padding-left: 5em;
+    padding-top: 3em;
+    min-width: 20rem;
+}
+
+.about-right p{
+    margin-top: 2em;
+    padding-right: 2em;
+    max-width: 50ch;
+}
+
+.hobbies-section{
+    margin-top: 10em;
+}
+
+.hobbies-section h2{
+    padding-top: 2.4em;
+    padding-left: 6%;
+}
+
+@media (max-width: 60rem){
+    .about-left{
+        width: 100%;
+    }
+    .about-right{
+        padding-left: 0em;
+    }
+
+    .hobbies-section h2{
+        padding-left: 0;
     }
 }
 
-#intro h2{
-    margin-top: 120px;
-}
+
+
+
+
 
 #email-link{
     font-size: 2rem;
     font-weight: bold;
-    color: #17B6BA;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+#email-link:hover{
+    color: var(--text-hover);
+    transition: 0.2s ease-in-out;
 }
 
 .click-button{

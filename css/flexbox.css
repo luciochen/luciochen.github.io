@@ -1,4 +1,6 @@
 
+/* flexbox code is from IAT339 Paul's tutorial */
+
 *,  *::after, *::before{
     box-sizing: border-box;
 }
@@ -58,4 +60,14 @@
 
 .col-2-right{
     flex: 1 1 40%;
+}
+
+/* about page flexbox */
+.about-left{
+    flex: 2 1 40%;
+    /* max-width: 30rem; */
+}
+
+.about-right{
+    flex: 1 1 50%;
 }

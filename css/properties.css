@@ -3,10 +3,21 @@
 	font-weight: bold;
 }
 
+.text-underline{
+	text-decoration: underline;
+}
+
 .color-text{
     color: #17B6BA;
 }
 
+.color-body h2{
+	color: #313131;
+}
+
+.color-vtl{
+	background-color: #F3EBE4;
+}
 .color-peeknest{
 	background-color: #EAE9E9;
 }
@@ -15,6 +26,8 @@
 	background-color: #F0DAA2;
 }
 
+
+/* shadow created in: https://brumm.af/shadows */
 .shadow{
 	-webkit-box-shadow: 
 	0 3.1px 3.8px rgba(0, 0, 0, 0.036),
@@ -36,6 +49,25 @@
 	margin-top: 3em;
 }
 
+.margin-top-lg{
+	margin-top: 6em;
+}
+
 .no-margin-top{
 	margin-top: 0;
+}
+
+
+
+/* classes for animation */
+
+.fade-in{
+	opacity: 0;
+	transform: translateY(20%);
+	transition: opacity 0.5s ease-in;
+}
+
+.fade-in.appear{
+	opacity: 1;
+	transform: translateY(0%);
 }

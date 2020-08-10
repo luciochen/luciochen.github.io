@@ -11,6 +11,11 @@
 	<link rel="stylesheet" type="text/css" href="css/flexbox.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<script src="https://kit.fontawesome.com/1c90995e4d.js" crossorigin="anonymous"></script>
+	<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+
 </head>
 
 
@@ -22,31 +27,25 @@
 		<ul>
 			<li><a href="about.html">about</a></li>
 			<li><a href="resume.html">resume</a></li>
-			<li id="nav-projects"><a href="#footer">contact</a></li>
+			<li><a href="#footer" id="link-to-contact">contact</a></li>
 		</ul>
 	</nav>
 
 
 	<div class="container">
 
-		<p class="main-intro">
-			Hello, I'm <strong>Lucio</strong> <span>&#128075;</span>
-			<br><br>
-			A passionate UX/UI designer and web developer.
-		</p>
-
-		<section class="box">
-			<div class="personal-intro box-item">
-				<p>I am a design student who loves creating smooth interaction and beautiful UI for
-					software products. I focus on understanding the problem in the users' perspective
-					and deliver a feasible solution to solve it.
+		<section class="intro-section">
+			<div class="main-intro">
+				<p>Hello, I’m <span class="intro-name">Lucio</span> &#128075;, 
+					a design student who loves creating elegant designs for digital products.
 				</p>
 			</div>
 
-		</section>	
+			<span class="intro-title">UX Designer & Web Developer</span>
+		</section>
 
 
-		<section class="project box shadow">
+		<section class="project box shadow fade-in">
 			<img src="images/showcase.png" alt="Tool library showcase">
 			
 			<div class="project-intro">
@@ -59,20 +58,20 @@
 			</div>
 		</section>
 
-		<section class="project box shadow color-grocery">
+		<section class="project box shadow color-grocery fade-in">
 			<img src="images/grocery-vancouver-landing.jpeg" alt="Grocery Vancouver">
 			
 			<div class="project-intro">
 				<span>Web design/ Web development / Graphic design</span>
 				<h3>Grocery Vancouver</h3>
-				<p>Web building for a grocery store. A platform allows people to shop grocery and delivery to their home.
+				<p>Web building for a grocery store. Shop grocery and delivery to your home.
 				</p>	
 
-				<button onclick="location= 'project-showcase.html'" class="btn shadow">VIEW CASE STUDY</button>
+				<button onclick="location= 'project-grocery.html'" class="btn shadow">VIEW PROJECT</button>
 			</div>
 		</section>
 
-		<section class="project box shadow color-peeknest">
+		<section class="project box shadow color-peeknest fade-in">
 			<img src="images/peeknest redesign.jpg" alt="Peeknest redesign">
 			
 			<div class="project-intro">
@@ -97,8 +96,16 @@
 		<a href="https://www.linkedin.com/in/lucio-chen-649638178/" target="_blank"> 
 			<i class="fa fa-linkedin fa-lg linkedin-icon"></i>
 		</a>
+		<div class="margin-top footer-link">
+			<a href="styleguide.html">Styleguide</a>
+			<a href="reference.html">References</a>
+		</div>
 
 	</footer>
+
+	<!-- <script src="js/main.js"></script> -->
+	<script src="js/observer.js"></script>
+
 
 
 </body>

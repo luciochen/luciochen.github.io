@@ -1,3 +1,7 @@
+
+// Go to top button is from the tutorial:
+// https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+
 //Get the button:
 mybutton = document.getElementById("top-button");
 
@@ -17,3 +21,20 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+
+// smooth scrolling to the contact section
+// code reference: https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
+document.querySelectorAll('#link-to-contact').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
+
+
+
+
