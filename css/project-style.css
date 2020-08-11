@@ -2,7 +2,13 @@
 
 h1{
 	font-size: 3.2rem;
-	margin-bottom: 6rem;
+	margin-bottom: 8rem;
+}
+
+@media (max-width: 40rem){
+	h1{
+		line-height: 1.2em;
+	}
 }
 
 h2{
@@ -59,7 +65,7 @@ hr{
 	display: block;
 }
 
-@media (max-width: 800px){
+@media (max-width: 50rem){
 	.project-container{
 		width: 82%;
 		/* box-sizing: border-box;
@@ -84,6 +90,7 @@ hr{
 }
 
 .project-banner{
+	margin-top: 2em;
 	position: relative;
 	background-color: #F3EBE4;
 	display: flex;
@@ -114,7 +121,7 @@ hr{
 	margin-left: auto;
 }
 
-@media(max-width: 800px){
+@media(max-width: 50rem){
 	.project-banner{
 		margin-top: 5rem;
 		display: block;
@@ -154,15 +161,16 @@ hr{
 }
 
 .context-section h2{
-	color: #17B6BA;
+	color: grey;
 }
 
 .context-section p{
 	font-size: 1rem;
+	color: grey;
 }
 
 .color-body h2{
-	color: black;
+	color: var(--body-color);
 }
 	/* h2 color change for grocery vancouver project */
 
@@ -186,21 +194,26 @@ hr{
 	margin-top: 5rem;
 	padding-right: 5%;
 	padding-bottom: 0.5em;
+	padding-top: 0.3em;
 
 	text-align: right;
 	width: 24rem;
-	border-bottom: 2px #17B6BA solid;
-	font-size: 2rem;
+	/* border-bottom: 2px #17B6BA solid; */
+	color: white;
+	background-color: var(--main-color);
+	font-size: 1.4rem;
 }
 
-@media (max-width: 800px){
+@media (max-width: 50rem){
 	.highlight-title{
 		margin: auto;
 		margin-top: 5rem;
 		text-align: center;
 		width: 20rem;
+		color: var(--body-color);
+		background: none;
 		border-bottom: 2px #17B6BA solid;
-		font-size: 2rem;
+		font-size: 1.4rem;
 	}
 }
 
@@ -274,7 +287,7 @@ hr{
 	color: #17B6BA;
 }
 
-@media(max-width: 700px){
+@media(max-width: 43.75rem){
 	.nav-btn{
 		display: none;
 	}
@@ -283,11 +296,13 @@ hr{
 
 
 /* start of grocery vancouver styling */
+
 .sketch-section img{
 	width: auto;
 	height: 30vw;
 	object-fit: contain;
 	min-width: 20rem;
+	display: block;
 }
 
 @media(max-width: 70rem){

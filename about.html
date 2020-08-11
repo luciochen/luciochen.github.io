@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 	<title>About Me</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -13,7 +16,7 @@
 </head>
 <body>
 	<nav>
-		<a href="index.html"> <img src="images/web header.png" alt="logo" class="header-img">
+		<a href="index.html"> <img src="images/web-header.png" alt="website logo" class="header-img">
 		</a>
 
 		<ul>
@@ -26,9 +29,9 @@
 
 	<div class="container margin-top">
 		<div class="box">
-			<img src="images/about-image.png" alt="my personal image" class="about-left">
+			<img src="images/about-image.png" alt="my personal image" class="about-left" id="personal-image">
 
-			<div class="about-right">
+			<div class="about-right" id="about-intro">
 				<h2>Who I am</h2>
 				<p>As a UX/UI designer, I focus on the details in every design interaction to ensure a good usability of the work. 
 				Besides, I would like to understand a problem from other people's perspective, to know what is people's real need when I am designing. 
@@ -43,7 +46,7 @@
 
 		<div class="hobbies-section box">
 			<h2 class="about-left">A little more about me</h2>
-			<div class="about-right">
+			<div class="about-right fade-in">
 				<h3>I Like Creating</h3>
 				<ul>
 					<li>Websites</li>
@@ -91,6 +94,7 @@
 
 	</footer>
 
+	<script src="js/observer.js"></script>
 	<script src="js/main.js"></script>
 
 	

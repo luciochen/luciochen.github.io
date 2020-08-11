@@ -40,6 +40,51 @@ li{
     max-width: 50ch;
 }
 
+@keyframes photo-animation{
+    from{
+        opacity: 0.5;
+        transform: scale(0.8);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slide-left{
+    from{
+        opacity: 0;
+        transform: translateX(20%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+#personal-image{
+    animation-name: photo-animation;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-name: photo-animation;
+    -webkit-animation-duration: 0.7s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+}
+
+#about-intro{
+    animation-name: slide-left;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0.7s;
+
+    opacity: 0;
+}
+
+
 .hobbies-section{
     margin-top: 10em;
 }
@@ -77,6 +122,12 @@ li{
 #email-link:hover{
     color: var(--text-hover);
     transition: 0.2s ease-in-out;
+}
+
+@media (max-width: 40rem){
+    #email-link{
+        font-size: 1.6rem;
+    }
 }
 
 .click-button{

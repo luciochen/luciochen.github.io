@@ -17,6 +17,7 @@ body{
 	--main-color: #16B9BB;
 	--bg-color: #E4F5F5;
 	--text-hover: #50cacc;
+	--body-color: #313131;
 }
 
 p{
@@ -42,6 +43,32 @@ img{
 }
 
 /* style setup for the css */
+
+.resume-link{
+	margin-left: 10%;
+	margin-top: 2em;
+	color: #17B6BA;
+	font-weight: bold;
+	font-size: 1.2rem;
+	display: block;
+}
+
+.resume-file{
+	margin-top: 2em;
+	height: 1200px;
+	width: 100%;
+}
+
+@media (max-width: 50rem){
+	.resume-link{
+		margin-top: 6em;
+		font-size: 1.2rem;
+	}
+
+	.resume-file{
+		margin-top: 6em;
+	}
+}
 
 nav{
 	margin-top: 1.5rem;
@@ -93,12 +120,11 @@ nav a:hover{
 }
 
 
-@media(max-width: 700px){
+@media (max-width: 43.75rem){
 	nav ul{
 		display: flex;
 		justify-content: space-around;
 		width: 20rem;
-		/* position: relative; */
 		transform: translate(-50%);
 		left: 50%;
 		top: 7rem;
@@ -142,7 +168,7 @@ h3{
 	display: block;
 }
 
-@media(max-width: 800px){
+@media(max-width: 50rem){
 	.container{
 		width: 80%;
 	}
@@ -157,21 +183,24 @@ h3{
 
 @keyframes intro-animation{
 	from{
-		transform: translate(10%, 20%);
-
+		transform: translate(10%, 30%);
 		opacity: 0;
+		/* transform: scale(0.7); */
 	}
 	to{
 		transform: translate(0%, 0%);
+		/* transform: scale(1); */
 		opacity: 1;
 	}
 }
 
 @keyframes fade-in{
 	from{
+		transform: translateX(-10%);
 		opacity: 0;
 	}
 	to{
+		transform: translateX(0%);
 		opacity: 1;
 	}
 }
@@ -185,8 +214,17 @@ h3{
 	border-radius: 6em 6em 0 6em;
 	min-width: 30ch;
 
+
+	-webkit-animation-name: intro-animation;
+	-webkit-animation-duration: 0.7s;
+	-webkit-animation-timing-function: ease-in-out;
+
+	-ms-animation-name: intro-animation;
+	-ms-animation-duration: 0.7s;
+	-ms-animation-timing-function: ease-in-out;
+
 	animation-name: intro-animation;
-	animation-duration: 1s;
+	animation-duration: 0.7s;
 	animation-timing-function: ease-in-out;
 }
 
@@ -215,8 +253,16 @@ h3{
 	opacity: 0;
 
 	animation-name: fade-in;
-	animation-duration: 2s;
-	animation-delay: 1s;
+	animation-duration: 0.5s;
+	animation-delay: 0.7s;
+
+	-webkit-animation-name: fade-in;
+	-webkit-animation-duration: 0.7s;
+	-webkit-animation-delay: 1s;
+
+	-ms-animation-name: fade-in;
+	-ms-animation-duration: 0.7s;
+	-ms-animation-delay: 1s;
 
 	/* code is from: https://stackoverflow.com/questions/9131026/how-to-keep-styles-after-animation */
 	-webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
@@ -343,7 +389,7 @@ h3{
 	color: grey;
 }
 
-@media(max-width: 1150px){
+@media(max-width: 71.875rem){
 
 	.project{
 		text-align: center;
