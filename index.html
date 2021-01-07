@@ -13,21 +13,20 @@
 
 	<script src="https://kit.fontawesome.com/1c90995e4d.js" crossorigin="anonymous"></script>
 	<script
-  src="https://code.jquery.com/jquery-3.5.1.js"
-  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-  crossorigin="anonymous"></script>
-
+	src="https://code.jquery.com/jquery-3.5.1.js"
+	integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+	crossorigin="anonymous"></script>
 </head>
 
 
 <body>
 	<nav>
-		<a href="index.html"> <img src="images/web-header.png" alt="website logo" class="header-img">
+		<a href="index.html"> <img src="images/web-header.png" alt="website logo">
 		</a>
 
 		<ul>
+			<li><a href="index.html">home</a></li>
 			<li><a href="about.html">about</a></li>
-			<li><a href="resume.html">resume</a></li>
 			<li><a href="#footer" id="link-to-contact">contact</a></li>
 		</ul>
 	</nav>
@@ -35,22 +34,43 @@
 
 	<div class="container">
 
-		<section class="intro-section">
-			<div class="main-intro">
-				<p>Hello, I’m <span class="intro-name">Lucio</span> &#128075;, 
-					a design student who loves creating elegant designs for digital products.
+		<section id="intro-container">
+			<div id="main-intro">
+				<span id="main-intro-begin">Hi,<br> I’m <span class="intro-name">Lucio &#128075; </span>
+				<p>I’m a UX designer who loves creating delightful digital products.
 				</p>
 			</div>
 
-			<span class="intro-title">UX Designer & Web Developer</span>
+			<ul id="intro-skills">
+				<li class="color-black font-weight-normal">I CREATE</li>
+				<li>UX/UI Design</li>
+				<li>Web Design</li>
+				<li>Front-End Development</li>
+				<li>Graphic Design</li>
+			</ul>
 		</section>
 
 
-		<section class="project box shadow fade-in">
+
+		<section class="project box bg-brandstorm shadow">
+			<img src="images/brandstorm/brandstorm.jpg" alt="Brandstorm 2020">
+			
+			<div class="project-intro">
+				<h4>Web design / Web Development in WordPress</h4>
+				<h3>Brandstorm 2020</h3>
+				<p>The design and development of a branding event using the existing 
+				event visual guidelines.</p>	
+
+				<button onclick="location= 'project-brandstorm.html'" class="btn shadow">VIEW PROJECT</button>
+			</div>
+		</section>
+
+
+		<section class="project box shadow">
 			<img src="images/showcase.png" alt="Tool library showcase">
 			
 			<div class="project-intro">
-				<span>UX design / User research / Graphic design</span>
+				<h4>UX design / User research / Graphic design</h4>
 				<h3>Tool library Showcase</h3>
 				<p>A UI/UX design solution for a better members engagement for Vancouver tool library.
 				</p>	
@@ -59,11 +79,12 @@
 			</div>
 		</section>
 
-		<section class="project box shadow color-grocery fade-in">
-			<img src="images/grocery-vancouver-landing.jpeg" alt="Grocery Vancouver">
+
+		<section class="project box shadow bg-grocery">
+			<img src="images/gv/grocery-vancouver-landing.jpeg" alt="Grocery Vancouver">
 			
 			<div class="project-intro">
-				<span>Web design/ Web development / Graphic design</span>
+				<h4>Web design/ Web development / Graphic design</h4>
 				<h3>Grocery Vancouver</h3>
 				<p>Web building for a grocery store. Shop grocery and delivery to your home.
 				</p>	
@@ -72,35 +93,17 @@
 			</div>
 		</section>
 
-		<section class="project box shadow color-peeknest fade-in">
-			<img src="images/peeknest-redesign.jpg" alt="Peeknest redesign">
-			
-			<div class="project-intro">
-				<span>UX design / User research</span>
-				<h3>Peeknest UI redesign</h3>
-				<p>Redesign of an existing organizing app Peeknest. Tackle on the problematic interactions.
-				</p>	
-
-				<button onclick="location= 'project-peeknest.html'" class="btn shadow">VIEW PROJECT</button>
-			</div>
-		</section>
-
 	</div>
 
 
 
 
-	<footer id="footer">
+	<footer id="footer" class="margin-top-lg">
 		<h3>Let's get in touch!</h3>
 		<a href="mailto:luciochen79@gmail.com" target="_blank" class="email-link">luciochen79@gmail.com</a>
 		<a href="https://www.linkedin.com/in/lucio-chen-649638178/" target="_blank"> 
 			<i class="fa fa-linkedin fa-lg linkedin-icon"></i>
 		</a>
-		<div class="margin-top footer-link">
-			<a href="styleguide.html">Styleguide</a>
-			<a href="reference.html">References</a>
-		</div>
-
 	</footer>
 
 	<script src="js/main.js"></script>

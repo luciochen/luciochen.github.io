@@ -1,8 +1,7 @@
 
-
 h1{
 	font-size: 3.2rem;
-	margin-bottom: 8rem;
+	margin-bottom: 6rem;
 }
 
 @media (max-width: 40rem){
@@ -12,18 +11,50 @@ h1{
 }
 
 h2{
-	font-size: 1.2rem;
+	margin-top: 6rem;
+	margin-bottom: 2rem;
+	padding-top: 0.4rem;
+
+	width: 2rem;
+	border-top: 3px solid var(--green);
+	font-size: 1.5rem;
 	font-weight: 900;
 }
 
 h3{
+	margin-top: 3rem;
+	margin-bottom: 0.2rem;
+	color: var(--green);
 	text-align: center;
-	font-size: 1.2rem;
+	font-size: 1.05rem;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+h4{
+	margin-bottom: 0.7rem;
+	/* font-size: 0.9rem; */
+	font-weight: 500;
+	line-height: 1.4rem;
+}
+
+a{
+	text-decoration: underline;
+	color: var(--green);
+}
+
+nav a{
+	text-decoration: none;
+}
+
+ul, ol{
+	padding-left: 1.3rem;
 }
 
 p{
-	max-width: 40rem;
-	min-width: 14rem;
+	margin-bottom: 2rem;
+	max-width: 34rem;
+	min-width: 20ch;
 }
 
 /* img{
@@ -33,6 +64,14 @@ p{
 hr{
 	margin-top: 180px;
 	border-top: 1px solid #17B6BA;
+}
+
+
+.explanation{
+	margin: auto;
+	margin-bottom: 1rem;
+	max-width: 30rem;
+	/* text-align: center; */
 }
 
 .caption{
@@ -45,21 +84,19 @@ hr{
 	max-width: 30rem;
 }
 
-/* end of global styling */
-
-
-
-
-
 
 .project-container{
-	width: 70%;
+	width: 55%;
 	margin: auto;
 	display: block;
 }
 
-.project-container-wide{
-	width: 90%;
+.vertical-space{
+	padding: 3rem 0rem;
+}
+
+.wide-container{
+	width: 80%;
 	margin: auto;
 	overflow: hidden;
 	display: block;
@@ -76,6 +113,11 @@ hr{
 		width: 100%;
 	}	
 }
+/* end of global styling */
+
+
+
+
 
 /* start of project banner */
 @keyframes banner-animation{
@@ -103,14 +145,15 @@ hr{
 }
 
 .project-banner span{
-	margin-left: 10%;
-	padding-bottom: .5em;
-	padding-top: 5%;
+	position: absolute;
+	bottom: 5rem;
+	left: 10%;
 
-	height: 50%;
+	padding-bottom: 0.5rem;
+
 	width: 30%;
 	font-size: 2.4rem;
-	font-weight: bold;
+	font-weight: 600;
 	line-height: 1.4em;
 	border-bottom: 2px grey solid;
 }
@@ -133,15 +176,6 @@ hr{
 		width: 100%;
 	}
 
-	.project-banner span{
-		padding: 0;
-		display: block;
-		margin: 0 auto;
-		width: 80%;
-		font-size: 2rem;
-		border: none;
-	}
-
 	h1{
 		font-size: 2rem;
 		margin-top: 3rem;
@@ -150,47 +184,116 @@ hr{
 
 }
 
+
+@media(max-width: 60rem){
+	.project-banner span{
+		padding: 0;
+		margin: 0 auto;
+		margin-top: 1rem;
+
+		display: block;
+		position: relative;
+		bottom: 0;
+		left: 0;
+
+		width: 80%;
+		font-size: 2rem;
+		border: none;
+	}
+}
+
+
+
 /* end of project banner */
 
 
 
 
-/* start of 2 column styling */
 .context-section{
-	padding: 1em;
-}
-
-.context-section h2{
-	color: grey;
+	margin-bottom: 10rem;
+	font-size: 0.9rem;
 }
 
 .context-section p{
-	font-size: 1rem;
-	color: grey;
+	margin-top: 0;
+	margin-bottom: 1.6rem;
 }
+
+.context-section a{
+	display: block;
+	color: var(--green);
+	text-decoration: underline;
+}
+
 
 .color-body h2{
 	color: var(--body-color);
 }
 	/* h2 color change for grocery vancouver project */
 
-.col-2-left{
-	padding-right: 3em;
+	
+
+/* end of 2 column styling */
+.col-of-2{
+	flex: 1 1 50%;
+	padding-right: 1rem;
+	text-align: center;
+	/* align-content: flex-start; */
 }
 
-.col-2-left img{
-	max-width: 60rem;
+.col-of-2 img{
+	width: 85%;
 	min-width: 20rem;
 }
 
-.col-2-right img{
-	max-width: 60rem;
+
+.col-of-3{
+	flex: 1 1 33%;
+	text-align: center;
 }
 
-/* end of 2 column styling */
+.col-of-3 img{
+	width: 80%;
+}
 
 
-.highlight-title{
+
+/* specified css for different projects */
+.brandstorm-wireframe{
+	flex: 1 1 30%;
+	text-align: center;
+}
+
+.big-image{
+	flex: 1 1 40%;
+	text-align: center;
+}
+
+.brandstorm-wireframe img{
+	width: 80%;
+}
+
+
+
+.showcase-mockup h4{
+	width: 80%;
+	margin: auto;
+	margin-bottom: 0.3rem;
+	font-weight: 400;
+}
+
+.showcase-mockup img{
+	width: 90%;
+}
+
+
+
+
+
+
+
+
+/* .highlight-title{
 	margin-top: 5rem;
 	padding-right: 5%;
 	padding-bottom: 0.5em;
@@ -198,13 +301,13 @@ hr{
 
 	text-align: right;
 	width: 24rem;
-	/* border-bottom: 2px #17B6BA solid; */
+	border-bottom: 2px #17B6BA solid;
 	color: white;
 	background-color: var(--main-color);
 	font-size: 1.4rem;
-}
+} */
 
-@media (max-width: 50rem){
+/* @media (max-width: 50rem){
 	.highlight-title{
 		margin: auto;
 		margin-top: 5rem;
@@ -215,7 +318,7 @@ hr{
 		border-bottom: 2px #17B6BA solid;
 		font-size: 1.4rem;
 	}
-}
+} */
 
 
 
@@ -246,34 +349,33 @@ hr{
 	background-color: rgb(95, 95, 95); /* Set a background color */
 	color: white; /* Text color */
 	cursor: pointer; /* Add a mouse pointer on hover */
-	padding: 15px 10px; /* Some padding */
-	border-radius: 12px; /* Rounded corners */
+	padding: 15px 20px; /* Some padding */
+	border-radius: 30px; /* Rounded corners */
 	font-size: 1.2rem; /* Increase font size */
 	transition: all 0.6s ease;
   }
   
 #top-button:hover {
-	background-color: #17B6BA; /* Add a dark-grey background on hover */
+	background-color: var(--green); /* Add a dark-grey background on hover */
 }
 
 .narrow-image{
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 80%;
+	margin: auto;
+	width: 70%;
 }
 
 .nav-btn{
-	font-weight: bold;
-	display: block;
-	position: relative;
 	margin-left: 15%;
 	margin-right: 15%;
-	margin-top: 5rem;
+	margin-top: 10rem;
+	
+	display: block;
+	position: relative;
 }
 
 .nav-btn a:hover{
-	color: #17B6BA;
+	color: var(--green);
 	transition: 0.2s ease-in;
 }
 

@@ -1,11 +1,24 @@
 
+h1{
+    margin-bottom: 0rem;
+    font-size: 1.8rem;
+    color: var(--green);
+}
+
 h2{
-    /* color: #17B6BA; */
-    font-size: 1.3rem;
+    margin-top: 4rem;
+	width: 2rem;
+	/* border-top: 3px solid var(--green); */
+	font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--green);
+    
+    display: inline;
 }
 
 h3{
-    font-size: 1.12rem;
+    font-size: 1.05rem;
+    font-weight: 900;
 }
 
 ul{
@@ -18,25 +31,20 @@ li{
     max-width: 32ch;
 }
 
+
 .about-left{
     width: 40%;
     object-fit: contain;
-    min-width: 20rem;
-}
-
-.about-left h2{
-    display: inline;
 }
 
 .about-right{
-    padding-left: 5em;
+    padding-left: 8em;
     padding-top: 3em;
     min-width: 20rem;
 }
 
 .about-right p{
-    margin-top: 2em;
-    padding-right: 2em;
+    margin-top: 0em;
     max-width: 50ch;
 }
 
@@ -85,15 +93,6 @@ li{
 }
 
 
-.hobbies-section{
-    margin-top: 10em;
-}
-
-.hobbies-section h2{
-    padding-top: 2.4em;
-    padding-left: 6%;
-}
-
 @media (max-width: 60rem){
     .about-left{
         width: 100%;
@@ -115,7 +114,6 @@ li{
 #email-link{
     font-size: 2rem;
     font-weight: bold;
-    color: var(--main-color);
     cursor: pointer;
 }
 
