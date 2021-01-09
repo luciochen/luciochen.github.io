@@ -2,7 +2,7 @@
 
 body{
 	color: #313131;
-	font-family: Graphik, "Open Sans", sans-serif;
+	font-family: Graphik, Avenir, "Open Sans", sans-serif;
 	font-size: 1.05rem;
 	line-height: 1.8em;
 	margin: 0;
@@ -87,7 +87,10 @@ nav li:hover{
 
 @media (max-width: 43.75rem){
 	nav ul{
+		display: -webkit-flex;
+		display: -ms-flex;
 		display: flex;
+
 		justify-content: space-around;
 		width: 20rem;
 		transform: translate(-50%);
@@ -145,6 +148,8 @@ h3{
 
 /* Home page styling */
 #intro-container{
+	display: -webkit-flex;
+    display: -ms-flex;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -209,9 +214,13 @@ h3{
 
 
 #intro-skills{
-	margin-top: 30%;
+	margin-top: 26%;
 	padding-right: 0.8rem;
+	
+	-webkit-flex: 2 1 20%;
+	-ms-flex: 2 1 20%;
 	flex: 1 1 20%;
+	
 	height: 9rem;
 	list-style-type: none;
 	text-align: right;
@@ -231,6 +240,8 @@ h3{
 	}
 
 	#intro-skills{
+		-webkit-flex: none;
+		-ms-flex: none;
 		flex: none;
 		margin: auto;
 		margin-top: 6rem;
@@ -306,14 +317,25 @@ h3{
 
 .project img{
 	width: 60%;
+	height: auto;
 	object-fit: contain;
 }
 
 .project-intro{
 	margin-top: 3%;
+	margin-left: 0.5rem;
 	width: 35%;
 	display: inline-block;
 	position: relative;
+}
+
+.project-intro h4{
+	margin-top: 2%;
+	margin-bottom: 0.3rem;
+	font-size: 0.9rem;
+	font-weight: 400;
+	line-height: 1.4rem;
+	color: grey;
 }
 
 .project-intro h3{
@@ -322,22 +344,16 @@ h3{
 
 .project-intro p{
 	margin-top: 2rem;
+	padding-right: 1rem;
 	font-size: 1rem;
 	line-height: 1.4em;
 	min-width: 12rem;
 }
 
-.project-intro h4{
-	margin-top: 0;
-	margin-bottom: 0.3rem;
-	font-size: 0.9rem;
-	font-weight: 400;
-	line-height: 1.4rem;
-	color: grey;
-}
 
 .project-intro button{
 	margin-top: 2.4rem;
+	margin-bottom: 1rem;
 	cursor: pointer;
 }
 
@@ -353,6 +369,10 @@ h3{
 	.project{
 		text-align: center;
 	}
+
+	.project img{
+		width: 100%;
+	}
 	
 	.project-intro{
 		width: 90%;
@@ -360,11 +380,7 @@ h3{
 		margin-top: 1em;
 		display: inline-block;
 	}
-
-	.project img{
-		width: 100%;
-		object-fit: contain;
-	}
+	
 }
 
 
