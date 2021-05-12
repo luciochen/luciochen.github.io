@@ -15,11 +15,13 @@ h2{
 	margin-bottom: 2rem;
 	padding-top: 0.4rem;
 
-	width: 2rem;
+	width: 2rem; 
 	border-top: 3px solid var(--green);
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 	font-weight: 900;
 }
+
+
 
 h3{
 	margin-top: 3rem;

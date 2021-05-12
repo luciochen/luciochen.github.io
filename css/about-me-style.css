@@ -26,7 +26,10 @@ h3{
 
 
 .about-left{
+    margin-top: 2rem;
     width: 40%;
+    max-width: 24rem;
+    min-width: 18rem;
     height: auto;
     object-fit: contain;
 }
