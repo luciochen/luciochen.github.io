@@ -18,7 +18,7 @@ h2{
 	width: 2rem; 
 	border-top: 3px solid var(--green);
 	font-size: 1.7rem;
-	font-weight: 900;
+	font-weight: 700;
 }
 
 
@@ -27,7 +27,6 @@ h3{
 	margin-top: 3rem;
 	margin-bottom: 0.2rem;
 	color: var(--green);
-	text-align: center;
 	font-size: 1.05rem;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -102,6 +101,14 @@ hr{
 	margin: auto;
 	overflow: hidden;
 	display: block;
+}
+
+.p60-container{
+	width: 70%;
+	margin: auto;
+	overflow: hidden;
+	display: block;
+	max-width: 60rem;
 }
 
 @media (max-width: 50rem){

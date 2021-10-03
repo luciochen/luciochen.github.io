@@ -79,9 +79,9 @@
     
     <!-- start of the design process -->
     <div class="project-container margin-top">
-        <h2>Project Request
+        <h2>Problem
         </h2>
-        <p>Vancouver CityStudio’s request was to create an interactive map that helps residents to discover cycling routes in the city. To lower the carbon footprint in the transportation sector, the city tries to engage more residents in biking by creating a safe and convenient biking experience.
+        <p>Vancouver CityStudio’s request was to create an interactive map that helps residents to discover cycling routes in the city. To lower the carbon footprint in the transportation sector, the city tries to engage more residents in biking by creating a safe and convenient biking experience. However, it’s reported that many people are not willing to bike due to safety concerns from complex road conditions and busy traffic.
 
 
             <br><br>
@@ -94,7 +94,11 @@
             To begin with, I discussed with CityStudio staff to understand their objectives and challenges. From this conversation, I decided to narrow the scope down to helping novice bikers since one big reason that stops citizens from biking is their lack of experience. 
             <br><br>
             Then, I interviewed 3 novice bikers. Since finding participants who match the demographics (both online and in-person) was difficult in this process, so I did secondary research by reading articles and blogs from HUB (a local cycling community) to reduce the bias caused by this small sample group.
-
+            <br><br>
+            The key takeaways from these researches include: <br>
+            <strong>1. The lack of separation from cars and dangerous road conditions (like unpaved roads and hills) are the most important factors that make bikers feel unsafe. <br>
+            2. Existing apps don’t provide localized data. For example, Google Maps might lead them to an unpaved road. </strong>
+            
         </p>
         <img src="images/Van-Bike/Persona.jpg" alt="Persona">
 
@@ -125,7 +129,7 @@
 
 
         <h2>Sketches + Wireframes</h2>
-        <p>Processes that focus on the features of informing users of the road types and general route information. Also, ideated the interaction from selecting a preferred route to map navigation. 
+        <p>Here is the sketch and wireframe process that focuses on building the features of informing users of the road types and general route information. Also, I ideated and tried interaction of selecting a preferred route and the map navigation.
         </p>
         <img src="images/Van-Bike/sketches.jpg" alt="Sketches">
         <img src="images/Van-Bike/Wireframes.jpg" alt="Wireframes">
@@ -144,22 +148,47 @@
     <div class="project-container margin-top">
         <h2>Final Design</h2>
         <h3>Feature 1: Route Planing</h3>
+        <p>After searching the destination, the user can click the “Direct” button to generate the suggested route. Since road type impacts bikers’ experience significantly, the route displays a summary of the included road types from 6 categories (shared lanes, protected bike lanes...) , distance, and duration. So, the user can select the route based on their comfort level.
+        </p>
     </div>
     <div class="wide-container box">
         <img src="images/Van-Bike/Feature 1.jpg" alt="Feature 1: Route Planing">
     </div>
 
 
+
+
     <div class="project-container margin-top">
-        <h3>Feature 2: Detour Dangerous Roads</h3>
+        <h3>Feature 2: Detour Dangerous Roads During Navigation</h3>
+        <p>The interface will display hazard reports on the road of selected route. Once checked the hazard report, the user can generate new routes by detouring the dangerous location, which makes sure the route is safe.
+        </p>
     </div>
-    <div class="wide-container box">
-        <img src="images/Van-Bike/Feature 2.jpg" alt="Feature 2: Detour Dangerous Roads">
+
+    <div class="p60-container box">
+        <img src="images/Van-Bike/Feature 2-innitial.jpg" alt="Feature 2: Innitial Detour Dangerous Roads">
     </div>
 
     <div class="project-container margin-top">
-        <h3>Feature 3: Sending Road Reports</h3>
+        <p>During the usability testing with 3 users, they all reported the issues of this feature. For example, they questioned what if there are multiple hazards on this route, does the user need to detour individually for each one? Also, some of them mentioned the road types’ color-coding with different shades of blue is not memorable.
+            <br><br>
+            The testing result indicates the rare usecase that I neglected when designing the interaction. With the feedback, I redesigned the interaction flow to address these problems. Also, I simplified the road types’ color-coding: blue for regular road types (shared lanes/unpaved roads) and yellow for the dangerous ones.
+        </p>
     </div>
+
+
+    <div class="wide-container box">
+        <img src="images/Van-Bike/Feature 2-final.jpg" alt="Feature 2: Detour Dangerous Roads">
+    </div>
+
+
+
+
+    <div class="project-container margin-top">
+        <h3>Feature 3: Sending Road Reports</h3>
+        <p>To make sure the hazard alarm is current and accurate, the report function allows the bikers to update the hazards they witnessed on the road. After an internal review of the city, other bikers using this app can use this information to avoid potential danger.
+        </p>
+    </div>
+
     <div class="wide-container box">
         <img src="images/Van-Bike/Feature 3.jpg" alt="Feature 3: Sending Road Reports">
     </div>
@@ -168,18 +197,18 @@
      <!-- End of the design process -->
 
 
-
+    <img class="margin-top" src="images/Van-Bike/final-mockup.jpg" alt="Final design mockup">
 
 
      
-    <div class="bg-brandstorm vertical-space margin-top">
+    <div class="bg-brandstorm vertical-space no-margin-top">
         <div class="project-container">
             <h2 class="no-margin-top">Conclusion</h2>
             <p>
-                In the UI design iterations, I experimented with many options. For example, making the interface understandable and simple when integrating the Transit information into the route section. At the final stage, I practiced looking at the design from the user’s perspective, so I was able to trim off complex interactions to make the interface intuitive and elegant.
-                
+                In the iterations, the insights gathered from the testings spot many flaws of the app usability. For example, when integrating the detour function, the feedback allows me to refine the interface to make it understandable. Also, I practiced looking at the design from the user’s perspective, so I was able to trim off complex interactions to make the interface intuitive and elegant. Overall, I believe the design answers the project requirement and provides a feasible solution for safe biking. 
                 <br><br>
-                Overall, I believe the design answers the project requirement and provides a feasible solution for safe biking. If that’s possible, I will be gathering feedback from the CityStudio team and potential users in the future to refine this project.
+                For future improvement, I believe it will be helpful to do a field study to understand how bikers react to different challenges on the road. One thing I might look into is integrating audio support and voice recognition to give users more ways to access the route information while biking on the road.
+                
 
             </p>
         </div>
