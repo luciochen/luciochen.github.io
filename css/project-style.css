@@ -54,8 +54,16 @@ ul, ol{
 
 p{
 	margin-bottom: 2rem;
-	max-width: 34rem;
+	max-width: 35rem;
 	min-width: 20ch;
+}
+
+strong{
+	font-weight: 600;
+}
+
+video{
+	/* margin-left: 30%; */
 }
 
 /* img{
@@ -226,7 +234,7 @@ hr{
 
 .context-section{
 	margin-bottom: 10rem;
-	font-size: 0.9rem;
+	font-size: 1rem;
 }
 
 .context-section span{
