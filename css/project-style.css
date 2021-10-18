@@ -58,6 +58,10 @@ p{
 	min-width: 20ch;
 }
 
+footer p{
+	margin: auto;
+}
+
 strong{
 	font-weight: 600;
 }

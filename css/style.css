@@ -156,7 +156,7 @@ h3{
 
 #main-intro{
 	margin-top: 20%;
-	margin-bottom: 10rem;
+	margin-bottom: 3rem;
 	display: block;
 	width: 28rem;
 	padding: 2em 2.5em;
@@ -221,7 +221,7 @@ h3{
 	-ms-flex: 2 1 20%;
 	flex: 1 1 20%;
 	
-	height: 9rem;
+	height: 8rem;
 	list-style-type: none;
 	text-align: right;
 	font-size: 0.8rem;
@@ -393,7 +393,7 @@ footer{
 	margin-top: 4rem;
 	margin-left: 14vw;
 	margin-right: 14vw;
-	margin-bottom: 2em;
+	margin-bottom: 0em;
 	padding-top: 2em;
 	padding-bottom: 3em;
 	text-align: center;
@@ -418,6 +418,10 @@ footer h3{
 .footer-link a:hover{
 	color: #17B6BA;
 	transition: ease-in 0.2s;
+}
+
+.footer-note{
+	color: grey;
 }
 
 .reference{
