@@ -58,6 +58,12 @@ p{
 	min-width: 20ch;
 }
 
+span{
+	line-height: 1.6rem;
+	max-width: 50rem;
+	margin-left: 0;
+}
+
 footer p{
 	margin: auto;
 }
